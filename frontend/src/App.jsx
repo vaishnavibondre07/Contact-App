@@ -15,7 +15,7 @@ function App() {
   };
 
   const fetchContacts = async () => {
-    const res = await fetch("mongodb+srv://vaishnavibondre07_db_user:Q0dk4qVDAjniNWwh@cluster0.gfl1kbu.mongodb.net/contact_db/api/contacts");
+    const res = await fetch("https://my-contact-backend.onrender.com/api/contacts");
     let data = await res.json();
 
     if (sort === "oldest") data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));

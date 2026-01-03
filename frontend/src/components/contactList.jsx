@@ -1,6 +1,6 @@
 const ContactList = ({ contacts, onDelete, showAlert }) => {
   const deleteContact = async (id) => {
-    await fetch(`mongodb+srv://vaishnavibondre07_db_user:Q0dk4qVDAjniNWwh@cluster0.gfl1kbu.mongodb.net/contact_db/api/contacts/${id}`, {
+    await fetch(`https://my-contact-backend.onrender.com/api/contacts/${id}`, {
       method: "DELETE",
     });
     showAlert("Contact deleted ❌");

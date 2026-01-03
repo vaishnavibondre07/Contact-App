@@ -16,7 +16,7 @@ const ContactForm = ({ onAdd, showAlert }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("mongodb+srv://vaishnavibondre07_db_user:Q0dk4qVDAjniNWwh@cluster0.gfl1kbu.mongodb.net/contact_db", {
+    await fetch("https://my-contact-backend.onrender.com/api/contacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
