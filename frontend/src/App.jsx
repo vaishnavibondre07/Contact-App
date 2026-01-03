@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ContactForm from "./components/ContactForm";
-import ContactList from "./components/ContactList";
+import ContactForm from "./components/contactForm.jsx";
+import ContactList from "./components/contactList.jsx";
 import SortBar from "./components/SortBar";
 import Alert from "./components/AlertBox";
 
@@ -15,7 +15,7 @@ function App() {
   };
 
   const fetchContacts = async () => {
-    const res = await fetch("http://localhost:5000/api/contacts");
+    const res = await fetch("mongodb+srv://vaishnavibondre07_db_user:Q0dk4qVDAjniNWwh@cluster0.gfl1kbu.mongodb.net/contact_db/api/contacts");
     let data = await res.json();
 
     if (sort === "oldest") data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));

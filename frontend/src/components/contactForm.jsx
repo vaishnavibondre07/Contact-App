@@ -16,7 +16,7 @@ const ContactForm = ({ onAdd, showAlert }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("http://localhost:5000/api/contacts", {
+    await fetch("mongodb+srv://vaishnavibondre07_db_user:Q0dk4qVDAjniNWwh@cluster0.gfl1kbu.mongodb.net/contact_db", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
