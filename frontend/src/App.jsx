@@ -15,7 +15,7 @@ function App() {
   };
 
   const fetchContacts = async () => {
-    const res = await fetch("https://my-contact-backend.onrender.com/api/contacts");
+    const res = await fetch("https://contact-management-application-he9c.onrender.com/api/contacts");
     let data = await res.json();
 
     if (sort === "oldest") data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));

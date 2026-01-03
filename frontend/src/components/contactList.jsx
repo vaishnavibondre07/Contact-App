@@ -1,6 +1,6 @@
 const ContactList = ({ contacts, onDelete, showAlert }) => {
   const deleteContact = async (id) => {
-    await fetch(`https://my-contact-backend.onrender.com/api/contacts/${id}`, {
+    await fetch(`https://contact-management-application-he9c.onrender.com/api/contacts/${id}`, {
       method: "DELETE",
     });
     showAlert("Contact deleted ❌");

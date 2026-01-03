@@ -16,7 +16,7 @@ const ContactForm = ({ onAdd, showAlert }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("https://my-contact-backend.onrender.com/api/contacts", {
+    await fetch("https://contact-management-application-he9c.onrender.com/api/contacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
