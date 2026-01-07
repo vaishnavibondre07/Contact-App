@@ -4,23 +4,21 @@ A simple and responsive Contact Management Web App built with the MERN stack tha
 
 🚀 Features
 
-Add contacts with Name, Email, Phone, and Message
-View all contacts in a responsive table or card layout
-Delete contacts with success notifications
-Sort contacts by latest, oldest, or name
-Fully mobile-friendly and responsive
-Reusable React components
+1. Add contacts with Name, Email, Phone, and Message
+2. View all contacts in a responsive table or card layout
+3. Delete contacts with success notifications
+4. Sort contacts by latest, oldest, or name
+5. Fully mobile-friendly and responsive
+6. Reusable React components
 
-🌐 Live Preview
-
-👉 Live Demo: https://contact-app-wb3c.vercel.app/
+🌐 Live Preview : https://contact-app-wb3c.vercel.app/
 
 🛠️ Tech Stack
 
-Frontend: React.js + Tailwind CSS
-Backend: Node.js + Express.js
-Database: MongoDB Atlas
-State Management: useState
+1. Frontend: React.js + Tailwind CSS
+2. Backend: Node.js + Express.js
+3. Database: MongoDB Atlas
+4. State Management: useState
 
 Deployment: Frontend on Vercel, Backend on Render
 
