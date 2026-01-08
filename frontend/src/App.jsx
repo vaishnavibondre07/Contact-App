@@ -29,25 +29,6 @@ function App() {
     fetchContacts();
   }, [sort]);
 
-  // return (
-  //   <div className="min-h-screen bg-gray-100 p-4">
-  //     <Alert message={alert} />
-
-  //     <div className="max-w-6xl mx-auto bg-white p-6 rounded-xl shadow">
-  //       <h1 className="text-3xl font-bold text-center mb-6">
-  //         📇 Contact Management App
-  //       </h1>
-
-  //       <ContactForm onAdd={fetchContacts} showAlert={showAlert} />
-  //       <SortBar sort={sort} setSort={setSort} />
-  //       <ContactList
-  //         contacts={contacts}
-  //         onDelete={fetchContacts}
-  //         showAlert={showAlert}
-  //       />
-  //     </div>
-  //   </div>
-  // );
 
   return (
   <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-3 sm:p-6">
