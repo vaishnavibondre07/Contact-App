@@ -11,7 +11,8 @@ const ContactForm = ({ onAdd, showAlert }) => {
   const isValid =
     form.name.trim() &&
     form.phone.trim() &&
-    (!form.email || /\S+@\S+\.\S+/.test(form.email));
+    (!form.email || /\S+@\S+\.\S+/.test(form.email)) &&
+    (!form.phone || /^\d{10}$/.test(form.phone));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
